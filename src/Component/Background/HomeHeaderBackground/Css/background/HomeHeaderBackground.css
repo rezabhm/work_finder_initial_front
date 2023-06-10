@@ -1,0 +1,79 @@
+.background-image_one {
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left:0px;
+    top:0px;
+
+    animation-name: image_opacity;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+
+.background-image_two {
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left:0px;
+    top:0px;
+
+    opacity: 0;
+
+    animation-name: image_opacity;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes image_opacity{
+
+    0% {
+
+        opacity: 0;
+        filter: blur(5px);
+
+    }
+
+    12.5% {
+
+        opacity: 1;
+        filter: blur(5px);
+
+    }
+
+    37.5% {
+
+        opacity: 1;
+        filter: blur(5px);
+
+    }
+
+
+    50% {
+
+        opacity: 0;
+        filter: blur(5px);
+
+    }
+
+    100% {
+
+        opacity: 0;
+        filter: blur(5px);
+
+    }
+
+}

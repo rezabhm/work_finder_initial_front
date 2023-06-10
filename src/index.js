@@ -1,17 +1,34 @@
+// package
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {createRoot} from "react-dom/client";
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// component
+import HomeHeaderBackground from "./Component/Background/HomeHeaderBackground/HomeHeaderBackground";
+import HomeHeaderTitle from "./Component/Title/HomeheaderTitle/HomeheaderTitle";
+import BoxLarge from "./Component/Box/BoxLarg/BoxLarge";
+import ImageList from "./Component/Image/ImageList/imageList";
+import TextHeader from "./Component/Title/TextHeader/TextHeader";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+const main = createRoot(document.getElementById('root'));
+
+main.render(
+
+    <Router>
+
+        <Routes>
+
+            {/*  Test URL */}
+            <Route path='test/component/background/home-header-background/' element={<HomeHeaderBackground />} />
+            <Route path='test/component/title/home-header-title/' element={<HomeHeaderTitle title='اینجا همه روزه کار هست !!' />} />
+            <Route path='test/component/title/text-header/' element={<TextHeader title1='اینجا همه روزه کار هست !!' title2='اینجا ' />} />
+            <Route path='test/component/box/box-large/' element={<BoxLarge desktop_scroll_height={0} mobile_scroll_height={0} />} />
+            <Route path='test/component/image/image-list/' element={<ImageList />} />
+
+        </Routes>
+
+
+    </Router>
+
+)
