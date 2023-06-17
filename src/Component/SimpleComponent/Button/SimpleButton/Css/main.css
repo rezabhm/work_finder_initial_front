@@ -1,0 +1,30 @@
+.simple-button {
+
+    animation: simple-button-animation 5s;
+
+    border-radius: 5px;
+
+}
+
+
+.simple-button:hover {
+
+    scale: 1.1;
+
+}
+
+.simple-button:active {
+
+    scale: .90;
+
+}
+
+@keyframes simple-button-animation {
+    from{opacity:0}
+    to{opacity:1}
+}
+
+
+
+
+

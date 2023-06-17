@@ -1,0 +1,18 @@
+.table-header-text {
+
+    /*option*/
+    direction: rtl;
+    color: white;
+
+    /*background*/
+    background-color: rgba(0,0,0,0);
+
+    /*text*/
+    justify-content: center;
+    align-items: center; /* Align vertical */
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+
+
+}

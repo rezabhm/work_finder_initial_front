@@ -1,0 +1,47 @@
+.main-div{
+
+    /*!*size*!*/
+    /*width: 95%;*/
+    /*height: 95%;*/
+
+    /*!*position*!*/
+    /*position: absolute;*/
+    /*left: 2.5%;*/
+    /*top: 2.5%;*/
+
+    /*background*/
+    background-color: #FBDCC4;
+
+    /*option*/
+    opacity: 0;
+
+}
+
+.main-div-appear {
+
+    /*!*size*!*/
+    /*width: 95%;*/
+    /*height: 95%;*/
+
+    /*!*position*!*/
+    /*position: absolute;*/
+    /*left: 2.5%;*/
+    /*top: 2.5%;*/
+
+    /*background*/
+    background-color: #FBDCC4;
+
+    /*option*/
+    opacity: 0;
+
+    /*animation*/
+    animation: linear box-appear 5s forwards;
+
+}
+
+@keyframes box-appear {
+
+    from{opacity: 0}
+    to{opacity: 1}
+
+}

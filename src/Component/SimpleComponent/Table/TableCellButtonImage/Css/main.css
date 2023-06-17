@@ -1,0 +1,41 @@
+.table-cell-button-image {
+
+    /*option*/
+    background-color: rgba(0,0,0,0);
+    border: none;
+    /*box-shadow:0 5px #999;*/
+
+    /*size*/
+    width:100%;
+    height: 100%;
+    background-image: none;
+
+}
+
+.table-cell-button-image:active {
+
+    /*size*/
+    scale: .0;
+
+}
+
+.table-cell-button-image:hover {
+
+    animation: linear table-button-hover-animation 1s infinite;
+
+}
+
+
+.table-cell-button-image-image {
+
+    /*size*/
+    width:100%;
+    height: 100%;
+}
+
+@keyframes table-button-hover-animation {
+    0%{scale: 1}
+    25%{scale: .8}
+    50%{scale: 1.1}
+    100%{scale: 1.0}
+}
