@@ -19,7 +19,6 @@ function Home(){
             <div style={{width:'100%', height:window.innerHeight.toString() + 'px'}} >
 
                 <HomeHeaderBackground />
-                <HomeHeaderTitle title='اینجا همه روزه کار هست !!' />
 
             </div>
 

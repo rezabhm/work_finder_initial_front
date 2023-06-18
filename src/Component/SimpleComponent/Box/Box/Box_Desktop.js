@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 
 // Css
 import './Css/main/desktop.css';
+import {Box} from "@mui/material";
 
 function Box_Desktop(props){
 
@@ -43,14 +44,21 @@ function Box_Desktop(props){
 
 
     return(
+        //
+        // <div className={mainDiv} style={props.style}
+        //
+        // >
+        //
+        //     {props.content}
+        //
+        // </div>
 
-        <div className={mainDiv} style={props.style}
+        <Box>
 
-        >
 
-            {props.content}
 
-        </div>
+        </Box>
+
 
     )
 

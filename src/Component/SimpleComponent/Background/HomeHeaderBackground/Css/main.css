@@ -1,0 +1,39 @@
+@keyframes image-opacity{
+
+    0% {
+
+        opacity: 0;
+        filter: blur(5px);
+
+    }
+
+    12.5% {
+
+        opacity: 1;
+        filter: blur(5px);
+
+    }
+
+    37.5% {
+
+        opacity: 1;
+        filter: blur(5px);
+
+    }
+
+
+    50% {
+
+        opacity: 0;
+        filter: blur(5px);
+
+    }
+
+    100% {
+
+        opacity: 0;
+        filter: blur(5px);
+
+    }
+
+}
