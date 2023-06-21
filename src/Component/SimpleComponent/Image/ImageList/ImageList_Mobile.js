@@ -5,22 +5,14 @@ import React, { useState} from "react";
 import construction from "./Media/mobile/construction.jpeg";
 import mechanic from "./Media/mobile/mechanic.jpeg";
 
-function ImageList_Mobile(){
+function ImageList_Mobile(props){
 
-    const [image_index, setImageIndex] = useState(1)
-    const image_list = [construction, mechanic]
+    const [image_index, setImageIndex] = useState(0)
+    const image_list = props.image_list
 
     const _ = setInterval(() => {
 
-        if(image_index === 0){
-
-            setImageIndex(1)
-
-        }else{
-
-            setImageIndex(0)
-
-        }
+        setImageIndex(image_index+1)
 
     }, 10000)
 
@@ -28,7 +20,7 @@ function ImageList_Mobile(){
 
         <>
 
-            <img src={image_list[image_index]} alt='image' className='image' />
+            <img src={image_list[(image_index % image_list.length).toFixed()]} alt='image' className='image' />
 
         </>
 

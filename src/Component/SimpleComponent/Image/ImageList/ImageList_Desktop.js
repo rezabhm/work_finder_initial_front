@@ -12,19 +12,11 @@ function ImageList_Desktop(props){
 
 
     const [image_index, setImageIndex] = useState(1)
-    const {imageList} = props;
+    const {image_list} = props;
 
     const _ = setInterval(() => {
 
-        if(image_index === 0){
-
-            setImageIndex(1)
-
-        }else{
-
-            setImageIndex(0)
-
-        }
+        setImageIndex(image_index+1)
 
     }, 10000)
 
@@ -32,7 +24,7 @@ function ImageList_Desktop(props){
 
         <>
 
-            <img src={imageList[image_index]} alt='image' className='image' />
+            <img src={image_list[(image_index % image_list.length).toFixed()]} alt='image' className='image' />
 
         </>
 

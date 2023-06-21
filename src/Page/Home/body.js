@@ -30,7 +30,7 @@ export const BoxLargeElement =()=>{
 
                 <div style={{width:'100%', height:'50%', position:'absolute', left:'0px', top:'0px'}}>
 
-                    <ImageList imageList={[
+                    <ImageList image_list={[
 
                         Image1,
                         Image2,
@@ -72,6 +72,18 @@ export const BoxLargeElement =()=>{
 
 
 
+                <div style={{width:'50%', height:'100%', position:'absolute', left:'0px', top:'0px'}}>
+
+                    <ImageList image_list={[
+
+                        Image1,
+                        Image2,
+
+
+                    ]} />
+
+                </div>
+
 
 
                 <div style={{width:'50%', height:'80%', position:'relative', left:'50%', top:'10%'}}>
@@ -111,13 +123,6 @@ export const SignupLoginButton = ()=>{
 
         <div style={{width:'100%', height:'100%', position:'relative' }}>
 
-            <ImageList  imageList={[
-
-                Image1,
-                Image2,
-
-
-            ]} />
             <div style={{width:'50%', height:'100%', position:'absolute', left:'0px', top:'0px', textAlign:'center', display:'flex', alignItems:'center', justifyContent:'center'}}>
 
                 <SimpleButton text={'ثیت نام'} style={{backgroundColor:'#a41731', color:'white'}} pushLink={'/test/component/table/table-row/'} icon={<PersonAddIcon />} />
