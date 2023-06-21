@@ -29,18 +29,18 @@ function Home(){
 
             </div>
 
-            <div style={{width:'100%', height:'50%', position:'relative', left:'0px', top:window.innerHeight.toString() + 'px'}} >
+            <div style={{width:'90%', height:'10%', position:'relative', left:'5%', top:window.innerHeight.toString() + 'px'}} >
 
                 <Box desktop_scroll_height={window.innerHeight * 1.5} mobile_scroll_height={window.innerHeight * 1.5} content={SignupLoginButton()} style={{width:'95%', height:'30%', position:'relative', top:'0px', right:'0px'}} />
 
             </div>
 
 
-            <div style={{width:'100%', height:'400%', position:'relative', left:'0px', top:(window.innerHeight * 0.68).toString() + 'px'}} >
+            {/*<div style={{width:'100%', height:'400%', position:'relative', left:'0px', top:(window.innerHeight * 0.68).toString() + 'px'}} >*/}
 
-                <Box desktop_scroll_height={window.innerHeight * 1.5} mobile_scroll_height={window.innerHeight * 1.5} content={TableGenerator()} style={{width:'95%', height:'30%', position:'relative', top:'0px', right:'0px'}} />
+            {/*    <Box desktop_scroll_height={window.innerHeight * 1.5} mobile_scroll_height={window.innerHeight * 1.5} content={TableGenerator()} style={{width:'95%', height:'30%', position:'relative', top:'0px', right:'0px'}} />*/}
 
-            </div>
+            {/*</div>*/}
 
         </div>
 

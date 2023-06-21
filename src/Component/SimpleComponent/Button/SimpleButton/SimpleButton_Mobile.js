@@ -3,6 +3,7 @@ import React from "react";
 import './Css/mobile.css';
 import './Css/main.css';
 import {Link} from "react-router-dom";
+import {Button} from "@mui/material";
 
 function SimpleButton_Mobile(props){
 
@@ -11,7 +12,7 @@ function SimpleButton_Mobile(props){
 
         <>
 
-            <Link to={props.pushLink}><button className='simple-button-mobile simple-button' style={props.style} >{props.text}</button></Link>
+            <Link to={props.pushLink}><Button startIcon={props.icon} style={props.style} size='small'>{props.text}</Button></Link>
 
         </>
 

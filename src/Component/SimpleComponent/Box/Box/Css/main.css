@@ -1,0 +1,6 @@
+@keyframes box-appear {
+
+    from{opacity: 0}
+    to{opacity: 1}
+
+}

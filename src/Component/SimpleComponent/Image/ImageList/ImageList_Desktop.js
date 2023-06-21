@@ -7,12 +7,12 @@ import construction from './Media/Desktop/construction.jpeg';
 import './Css/Desktop.css';
 
 
-function ImageList_Desktop(){
+function ImageList_Desktop(props){
 
 
 
     const [image_index, setImageIndex] = useState(1)
-    const image_list = [construction, mechanic]
+    const {imageList} = props;
 
     const _ = setInterval(() => {
 
@@ -32,7 +32,7 @@ function ImageList_Desktop(){
 
         <>
 
-            <img src={image_list[image_index]} alt='image' className='image' />
+            <img src={imageList[image_index]} alt='image' className='image' />
 
         </>
 

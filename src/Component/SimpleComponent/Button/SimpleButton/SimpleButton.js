@@ -9,7 +9,7 @@ function SimpleButton(props){
 
         return(
 
-            <SimpleButton_Mobile text={props.text} style={props.style} pushLink={props.pushLink} />
+            <SimpleButton_Mobile text={props.text} style={props.style} pushLink={props.pushLink} icon={props.icon} />
 
         )
 
@@ -17,7 +17,7 @@ function SimpleButton(props){
 
         return(
 
-            <SimpleButton_Desktop  text={props.text} style={props.style} pushLink={props.pushLink} />
+            <SimpleButton_Desktop  text={props.text} style={props.style} pushLink={props.pushLink} icon={props.icon} />
 
         )
 

@@ -2,8 +2,9 @@
 import React, {useEffect, useState} from "react";
 
 // Css
-import './Css/main/desktop.css';
+import './Css/main.css';
 import {Box} from "@mui/material";
+import {main_div, main_div_appear} from "./Css/main";
 
 function Box_Desktop(props){
 
@@ -11,7 +12,7 @@ function Box_Desktop(props){
     // attribute
     /////////////////////////////////////////////////
 
-    const [mainDiv, setMainDiv ] = useState('main-div');
+    const [mainDiv, setMainDiv ] = useState(main_div);
 
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
@@ -33,7 +34,7 @@ function Box_Desktop(props){
 
         if(winScroll >= props.scrollHeight){
 
-            setMainDiv('main-div-appear')
+            setMainDiv(main_div_appear)
 
         }
 
@@ -53,9 +54,9 @@ function Box_Desktop(props){
         //
         // </div>
 
-        <Box>
+        <Box style={mainDiv} >
 
-
+            {props.content}
 
         </Box>
 

@@ -1,5 +1,7 @@
 // package
 import React, {useEffect, useState}  from "react";
+import {main_div, main_div_appear} from "./Css/main";
+import {Box} from "@mui/material";
 
 
 function Box_Mobile(props){
@@ -8,7 +10,7 @@ function Box_Mobile(props){
     // attribute
     /////////////////////////////////////////////////
 
-    const [mainDiv, setMainDiv ] = useState('main-div');
+    const [mainDiv, setMainDiv ] = useState(main_div);
 
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
@@ -30,7 +32,7 @@ function Box_Mobile(props){
 
         if(winScroll >= props.scrollHeight){
 
-            setMainDiv('main-div-appear')
+            setMainDiv(main_div_appear)
 
         }
 
@@ -42,13 +44,11 @@ function Box_Mobile(props){
 
     return(
 
-        <div className={mainDiv} style={props.style}
-
-        >
+        <Box style={mainDiv} >
 
             {props.content}
 
-        </div>
+        </Box>
 
     )
 

@@ -3,6 +3,7 @@ import React from "react";
 import './Css/desktop.css';
 import './Css/main.css';
 import {Link} from "react-router-dom";
+import {Button} from "@mui/material";
 
 function SimpleButton_Desktop(props){
 
@@ -11,7 +12,7 @@ function SimpleButton_Desktop(props){
 
         <>
 
-            <Link to={props.pushLink}><button className='simple-button-desktop simple-button' style={props.style} ><span style={{color:'white'}} >{props.text}</span></button></Link>
+            <Link to={props.pushLink}><Button startIcon={props.icon} style={props.style} size='large'>{props.text}</Button></Link>
 
         </>
 

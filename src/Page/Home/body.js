@@ -9,6 +9,13 @@ import SimpleButton from "../../Component/SimpleComponent/Button/SimpleButton/Si
 import ImageProfile from "../../Media/ImageList/profileImage.jpeg";
 import Table from "../../Component/SemiComplexComponent/Table/Table/Table";
 import ClickIcon from'../../Media/Home/table/button.png';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import LoginIcon from '@mui/icons-material/Login';
+
+
+import Image1 from '../../Media/Home/ImageList/pexels-andrea-piacquadio-3807329.jpg';
+import Image2 from '../../Media/Home/ImageList/pexels-tamil-vanan-4966809.jpg';
+
 // import {ArrowBackIosOutlined} from "@material-ui/icons";
 
 export const BoxLargeElement =()=>{
@@ -23,7 +30,13 @@ export const BoxLargeElement =()=>{
 
                 <div style={{width:'100%', height:'50%', position:'absolute', left:'0px', top:'0px'}}>
 
-                    <ImageList />
+                    <ImageList imageList={[
+
+                        Image1,
+                        Image2,
+
+
+                    ]} />
 
                 </div>
 
@@ -58,11 +71,8 @@ export const BoxLargeElement =()=>{
             <div style={{width:'100%', height:'100%', position:'absolute', left:'0px', top:'0px'}}>
 
 
-                <div style={{width:'50%', height:'100%', position:'absolute', left:'0px', top:'0px'}}>
 
-                    <ImageList />
 
-                </div>
 
                 <div style={{width:'50%', height:'80%', position:'relative', left:'50%', top:'10%'}}>
 
@@ -101,16 +111,22 @@ export const SignupLoginButton = ()=>{
 
         <div style={{width:'100%', height:'100%', position:'relative' }}>
 
+            <ImageList  imageList={[
 
+                Image1,
+                Image2,
+
+
+            ]} />
             <div style={{width:'50%', height:'100%', position:'absolute', left:'0px', top:'0px', textAlign:'center', display:'flex', alignItems:'center', justifyContent:'center'}}>
 
-                <SimpleButton text={'ثیت نام'} style={{backgroundImage:'linear-gradient(to bottom , rgba(163, 112, 191, 1) , rgba(163, 112, 191, .5) , rgba(163, 112, 191, 1) )'}} pushLink={'/test/component/table/table-row/'} />
+                <SimpleButton text={'ثیت نام'} style={{backgroundColor:'#a41731', color:'white'}} pushLink={'/test/component/table/table-row/'} icon={<PersonAddIcon />} />
 
             </div>
 
             <div style={{width:'50%', height:'100%', position:'absolute', left:'50%', top:'0%', textAlign:'center', display:'flex', alignItems:'center', justifyContent:'center' }}>
 
-                <SimpleButton text={'ورود'} style={{backgroundImage:'linear-gradient(to bottom , rgba(203, 80, 100, 1) ,rgba(203, 80, 100, .5) ,rgba(203, 80, 100, 1) )'}} pushLink={'/test/component/table/table-row/'} />
+                <SimpleButton text={'ورود'} style={{backgroundColor:'#1734a4', color:'white'}} pushLink={'/test/component/table/table-row/'} icon={<LoginIcon />} />
 
             </div>
 
